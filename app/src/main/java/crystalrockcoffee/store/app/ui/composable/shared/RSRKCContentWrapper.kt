@@ -1,0 +1,31 @@
+package crystalrockcoffee.store.app.ui.composable.shared
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import crystalrockcoffee.store.app.ui.state.DataUiState
+
+@Composable
+fun <T> RSRKCContentWrapper(
+    modifier: Modifier = Modifier,
+    dataState: DataUiState<T>,
+    dataPopulated: @Composable (() -> Unit),
+    dataEmpty: @Composable (() -> Unit),
+    dataInitial: @Composable (() -> Unit) = {},
+) {
+    Box(modifier = modifier) {
+        when (dataState) {
+            is DataUiState.Populated -> {
+                dataPopulated()
+            }
+
+            DataUiState.Empty -> {
+                dataEmpty()
+            }
+
+            DataUiState.Initial -> {
+                dataInitial()
+            }
+        }
+    }
+}
