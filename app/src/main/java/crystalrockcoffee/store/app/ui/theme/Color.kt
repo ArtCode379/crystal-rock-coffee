@@ -2,10 +2,22 @@ package crystalrockcoffee.store.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Brand palette
+val Gold = Color(0xFFD4AF37)
+val DarkNavy = Color(0xFF2C3E50)
+val Background = Color(0xFFFAFAFA)
+val Surface = Color(0xFFFFFFFF)
+val OnPrimary = Color(0xFF1A1A1A)
+val OnSurface = Color(0xFF1A1A1A)
+val MutedText = Color(0xFF888888)
+val Divider = Color(0xFFE0E0E0)
+val DarkBackground = Color(0xFF1A1A1A)
+val ErrorRed = Color(0xFFB00020)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// Dark theme variants
+val GoldDark = Color(0xFFD4AF37)
+val DarkNavyDark = Color(0xFF34495E)
+val BackgroundDark = Color(0xFF121212)
+val SurfaceDark = Color(0xFF1E1E1E)
+val OnPrimaryDark = Color(0xFF1A1A1A)
+val OnSurfaceDark = Color(0xFFECECEC)
